@@ -1,0 +1,89 @@
+$yashil: #2ecc71;
+$sariq: #f1c40f;
+$oq: #ffffff;
+$matn: #2c3e50;
+$fon: #ebf5fb;
+
+.viktorina-qobigi {
+    background-color: $oq;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 5px solid $yashil;
+    margin-top: 120px;
+    .natija-oynasi {
+        text-align: center;
+
+        .yakuniy-bal {
+            color: $sariq;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px #ecf0f1;
+        }
+
+        .tabrik-matni {
+            font-size: 1.5rem;
+            color: $yashil;
+            font-weight: bold;
+        }
+
+        .qayta-tugmasi {
+            font-family: "Varela Round", sans-serif;
+            background: $sariq;
+            color: $matn;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+
+            &:hover {
+                background: darken($sariq, 10%);
+            }
+        }
+    }
+
+    .savol-qismi {
+        .savol-raqami {
+            color: #95a5a6;
+            font-size: 1.2rem;
+
+            span {
+                color: $yashil;
+                font-size: 1.8rem;
+            }
+        }
+
+        .savol-matni {
+            font-size: 1.6rem;
+            color: $matn;
+            margin: 20px 0;
+        }
+    }
+
+    .variantlar-ruyxati {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .javob-tugmasi {
+            background: $fon;
+            border: 2px solid $yashil;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            color: $matn;
+            font-family: "Varela Round", sans-serif;
+            &:hover {
+                background: $yashil;
+                color: $oq;
+                transform: scale(1.03);
+            }
+        }
+    }
+}

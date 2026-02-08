@@ -1,0 +1,81 @@
+.stats-container {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.stats-container .stats-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid #90EE90;
+  border-radius: 8px;
+  color: #90EE90;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.stats-container .stats-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+.stats-container .stats-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+}
+.stats-container .stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.stats-container .stats-grid .stat-card {
+  background-color: #f9f9f7;
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  padding: 40px 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.stats-container .stats-grid .stat-card:hover {
+  transform: translateY(-5px);
+}
+.stats-container .stats-grid .stat-card .stat-icon {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #90EE90;
+}
+.stats-container .stats-grid .stat-card .stat-label {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.stats-container .stats-grid .stat-card .stat-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    padding: 50px 15px;
+  }
+  .stats-container .stats-title {
+    font-size: 32px;
+  }
+  .stats-container .stat-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .stats-container .stat-value {
+    font-size: 38px;
+  }
+}/*# sourceMappingURL=Statistics.css.map */

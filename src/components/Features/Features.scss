@@ -1,0 +1,140 @@
+$primary-green: #90EE90;
+$bg-light: #fdfdfd;
+$text-dark: #2c2c2c;
+$text-grey: #666;
+
+.features-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $bg-light;
+    .badge {
+        display: inline-block;
+        padding: 6px 16px;
+        border: 1px solid $primary-green;
+        border-radius: 8px;
+        color: $primary-green;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    .main-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: $text-dark;
+        margin-bottom: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sub-title {
+        max-width: 600px;
+        margin: 0 auto 50px;
+        margin-top: 20px;
+        color: $text-grey;
+        line-height: 1.6;
+    }
+
+    .features-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        .feature-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            padding: 20px;
+
+            .icon-wrapper {
+                width: 70px;
+                height: 70px;
+                background-color: $primary-green;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 20px;
+                font-size: 30px;
+                color: white;
+                box-shadow: 0 4px 15px #90EE90;
+                img{
+                    max-width: 40px;
+                    width: 100%;
+                    height: 40px;
+                }
+            }
+
+            h3 {
+                margin-bottom: 12px;
+                color: $text-dark;
+            }
+
+            p {
+                font-size: 15px;
+                color: $text-grey;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+.ibrat-main-container {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    background: #f4f4f4;
+
+    .sidebar-schedule {
+        width: 350px;
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+
+        .schedule-list {
+            max-height: 500px;
+            overflow-y: auto;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .lesson-item {
+                margin-bottom: 15px;
+                padding: 15px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .video-section {
+        flex: 1;
+
+        .tv-frame {
+            border: 10px solid #e0e0e0;
+            border-radius: 25px;
+            overflow: hidden;
+
+            .video-box {
+                aspect-ratio: 16/9;
+            }
+
+            .ibrat-tv-footer {
+                background: #ccc;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

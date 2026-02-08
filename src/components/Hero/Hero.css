@@ -1,0 +1,42 @@
+.hero .hero-content {
+  margin: 0 auto;
+  margin-top: 200px;
+  max-width: 1150px;
+}
+.hero .hero-content h1 {
+  font-size: 68px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+.hero .hero-content h1 span {
+  color: #90EE90;
+}
+.hero .hero-content p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-out;
+}
+.hero .hero-content .btn {
+  background-color: #e6ffe6;
+  color: #90EE90;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Hero.css.map */

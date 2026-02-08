@@ -1,0 +1,72 @@
+.viktorina-qobigi {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 5px solid #2ecc71;
+  margin-top: 120px;
+}
+.viktorina-qobigi .natija-oynasi {
+  text-align: center;
+}
+.viktorina-qobigi .natija-oynasi .yakuniy-bal {
+  color: #f1c40f;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #ecf0f1;
+}
+.viktorina-qobigi .natija-oynasi .tabrik-matni {
+  font-size: 1.5rem;
+  color: #2ecc71;
+  font-weight: bold;
+}
+.viktorina-qobigi .natija-oynasi .qayta-tugmasi {
+  font-family: "Varela Round", sans-serif;
+  background: #f1c40f;
+  color: #2c3e50;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.viktorina-qobigi .natija-oynasi .qayta-tugmasi:hover {
+  background: rgb(193.7007874016, 157.3818897638, 11.2992125984);
+}
+.viktorina-qobigi .savol-qismi .savol-raqami {
+  color: #95a5a6;
+  font-size: 1.2rem;
+}
+.viktorina-qobigi .savol-qismi .savol-raqami span {
+  color: #2ecc71;
+  font-size: 1.8rem;
+}
+.viktorina-qobigi .savol-qismi .savol-matni {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin: 20px 0;
+}
+.viktorina-qobigi .variantlar-ruyxati {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.viktorina-qobigi .variantlar-ruyxati .javob-tugmasi {
+  background: #ebf5fb;
+  border: 2px solid #2ecc71;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #2c3e50;
+  font-family: "Varela Round", sans-serif;
+}
+.viktorina-qobigi .variantlar-ruyxati .javob-tugmasi:hover {
+  background: #2ecc71;
+  color: #ffffff;
+  transform: scale(1.03);
+}/*# sourceMappingURL=Quiz.css.map */

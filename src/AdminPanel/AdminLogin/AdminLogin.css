@@ -1,0 +1,182 @@
+.admin-light-auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 30px 30px;
+  padding: 20px;
+}
+.admin-light-auth .auth-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.admin-light-auth .auth-card:hover {
+  transform: translateY(-5px);
+}
+.admin-light-auth .auth-card .auth-info {
+  margin-bottom: 35px;
+}
+.admin-light-auth .auth-card .auth-info .brand-logo {
+  margin-bottom: 20px;
+}
+.admin-light-auth .auth-card .auth-info .brand-logo img {
+  height: 55px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.admin-light-auth .auth-card .auth-info h1 {
+  font-size: 28px;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.admin-light-auth .auth-card .auth-info p {
+  color: #64748b;
+  font-size: 15px;
+}
+.admin-light-auth .auth-card form {
+  text-align: left;
+}
+.admin-light-auth .auth-card form button {
+  font-family: "Varela Round", sans-serif;
+}
+.admin-light-auth .auth-card form .input-box {
+  margin-bottom: 22px;
+}
+.admin-light-auth .auth-card form .input-box label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+  margin-left: 4px;
+}
+.admin-light-auth .auth-card form .input-box .field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.admin-light-auth .auth-card form .input-box .field .icon {
+  position: absolute;
+  left: 16px;
+  font-size: 20px;
+  color: #64748b;
+  pointer-events: none;
+}
+.admin-light-auth .auth-card form .input-box .field input {
+  font-family: "Varela Round", sans-serif;
+  width: 100%;
+  padding: 14px 16px 14px 48px;
+  background: #f1f5f9;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  font-size: 15px;
+  color: #1e293b;
+  transition: all 0.2s ease;
+}
+.admin-light-auth .auth-card form .input-box .field input::-moz-placeholder {
+  color: #94a3b8;
+}
+.admin-light-auth .auth-card form .input-box .field input::placeholder {
+  color: #94a3b8;
+}
+.admin-light-auth .auth-card form .input-box .field input:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #90EE90;
+  box-shadow: 0 0 0 4px rgba(144, 238, 144, 0.15);
+}
+.admin-light-auth .auth-card form .input-box .field .eye {
+  position: absolute;
+  right: 16px;
+  font-size: 20px;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.admin-light-auth .auth-card form .input-box .field .eye:hover {
+  color: #1e293b;
+}
+.admin-light-auth .auth-card form button {
+  width: 100%;
+  padding: 16px;
+  background: #90EE90;
+  color: rgb(16.8671875, 110.1328125, 16.8671875);
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-light-auth .auth-card form button:hover {
+  background: rgb(121.88671875, 234.61328125, 121.88671875);
+  box-shadow: 0 10px 15px -3px rgba(144, 238, 144, 0.3);
+  transform: scale(1.01);
+}
+.admin-light-auth .auth-card form button:active {
+  transform: scale(0.98);
+}
+.admin-light-auth .auth-card form button:disabled {
+  background: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+.admin-light-auth .auth-card .auth-footer {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+}
+.admin-light-auth .auth-card .auth-footer span {
+  font-size: 14px;
+  color: #64748b;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.admin-light-auth .auth-card .auth-footer span:hover {
+  color: #90EE90;
+  text-decoration: underline;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: currentColor;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 480px) {
+  .admin-light-auth .auth-card {
+    padding: 35px 25px;
+    border-radius: 0;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=AdminLogin.css.map */

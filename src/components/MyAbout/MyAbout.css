@@ -1,0 +1,79 @@
+.my-about {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.my-about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  max-width: 320px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 800;
+  border: 1px solid #90EE90;
+  color: #90EE90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.my-about h3 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #90EE90;
+  text-align: center;
+  font-weight: 700;
+}
+.my-about .card-about {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.08);
+}
+.my-about .card-about .image-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.my-about .card-about .image-div img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.my-about .card-about .user-about {
+  flex: 2;
+}
+.my-about .card-about .user-about p {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 0.5921568627);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .my-about h2 {
+    font-size: 24px;
+  }
+  .my-about h3 {
+    font-size: 22px;
+  }
+  .my-about .card-about {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+  .my-about .card-about .image-div img {
+    max-width: 200px;
+  }
+  .my-about .card-about .user-about p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=MyAbout.css.map */

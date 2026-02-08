@@ -1,0 +1,120 @@
+.features-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+}
+.features-section .badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid #90EE90;
+  border-radius: 8px;
+  color: #90EE90;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.features-section .main-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.features-section .sub-title {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  margin-top: 20px;
+  color: #666;
+  line-height: 1.6;
+}
+.features-section .features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.features-section .features-grid .feature-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 20px;
+}
+.features-section .features-grid .feature-card .icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: #90EE90;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 30px;
+  color: white;
+  box-shadow: 0 4px 15px #90EE90;
+}
+.features-section .features-grid .feature-card .icon-wrapper img {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+}
+.features-section .features-grid .feature-card h3 {
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+.features-section .features-grid .feature-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.ibrat-main-container {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+  background: #f4f4f4;
+}
+.ibrat-main-container .sidebar-schedule {
+  width: 350px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.ibrat-main-container .sidebar-schedule .schedule-list {
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.ibrat-main-container .sidebar-schedule .schedule-list::-webkit-scrollbar {
+  display: none;
+}
+.ibrat-main-container .sidebar-schedule .schedule-list .lesson-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.ibrat-main-container .video-section {
+  flex: 1;
+}
+.ibrat-main-container .video-section .tv-frame {
+  border: 10px solid #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.ibrat-main-container .video-section .tv-frame .video-box {
+  aspect-ratio: 16/9;
+}
+.ibrat-main-container .video-section .tv-frame .ibrat-tv-footer {
+  background: #ccc;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ibrat-main-container .video-section .tv-frame .ibrat-tv-footer img {
+  height: 30px;
+}/*# sourceMappingURL=Features.css.map */

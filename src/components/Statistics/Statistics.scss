@@ -1,0 +1,96 @@
+$green-color: #90EE90;
+$text-dark: #1a1a1a;
+$text-light: #666;
+$bg-card: #f9f9f7; 
+.stats-container {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    .stats-badge {
+        display: inline-block;
+        padding: 6px 16px;
+        border: 1px solid $green-color;
+        border-radius: 8px;
+        color: $green-color;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .stats-title {
+        font-size: 42px;
+        font-weight: 800;
+        color: $text-dark;
+        margin-bottom: 15px;
+        letter-spacing: -1px;
+    }
+
+    .stats-subtitle {
+        font-size: 18px;
+        color: $text-light;
+        margin-bottom: 60px;
+    }
+
+    .stats-grid {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        .stat-card {
+            background-color: $bg-card;
+            flex: 1;
+            min-width: 300px;
+            max-width: 380px;
+            padding: 40px 20px;
+            border-radius: 25px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .stat-icon {
+                font-size: 35px;
+                margin-bottom: 20px;
+                color: $green-color;
+            }
+
+            .stat-label {
+                font-size: 16px;
+                color: $text-light;
+                margin-bottom: 10px;
+            }
+
+            .stat-value {
+                font-size: 48px;
+                font-weight: 800;
+                color: #333;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        padding: 50px 15px;
+
+        .stats-title {
+            font-size: 32px;
+        }
+
+        .stat-card {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .stat-value {
+            font-size: 38px;
+        }
+    }
+}

@@ -1,0 +1,457 @@
+$bg-color: #f4f7fe;
+$sidebar-color: #111c44;
+$primary-green: #90EE90;
+$white: #ffffff;
+$text-main: #2b3674;
+$text-gray: #a3aed0;
+$danger: #ff5f5f;
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: $bg-color;
+    .sidebar {
+        width: 280px;
+        background-color: $sidebar-color;
+        padding: 40px 20px;
+        color: $white;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+
+        .svg-menu {
+            width: 40px;
+            right: 8px;
+            cursor: pointer;
+            top: 40px;
+            position: absolute;
+            margin-top: -20px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+            color: $primary-green;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 8px;
+
+            .nav-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 16px 20px;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                color: $text-gray;
+
+                &:hover,
+                &.active {
+                    background-color: rgba(255, 255, 255, 0.08);
+                    color: $white;
+                }
+
+                &.active {
+                    font-weight: 700;
+                    border-right: 4px solid $primary-green;
+                }
+
+                &.logout {
+                    margin-top: auto;
+                    color: $danger;
+                }
+            }
+        }
+    }
+
+    .content {
+        flex: 1;
+        padding: 40px;
+        max-width: 1150px;
+        width: 100%;
+        margin: 0 auto;
+
+        header h2 {
+            color: $text-main;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+
+            .stat-card {
+                background: $white;
+                padding: 24px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                box-shadow: $shadow;
+                background: linear-gradient(135deg, $white 0%, #f0fff0 100%);
+
+                .stat-icon {
+                    font-size: 28px;
+                    background: $white;
+                    color: #44ad44;
+                    min-width: 56px;
+                    height: 56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 16px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+                }
+
+                .details {
+                    flex: 1;
+
+                    label {
+                        color: $text-gray;
+                        font-size: 12px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        display: block;
+                    }
+
+                    input {
+                        border: none;
+                        background: transparent;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $text-main;
+                        width: 100%;
+                        padding: 5px 0;
+                        outline: none;
+                        border-radius: 10px;
+                        font-family: "Varela Round", sans-serif;
+                    }
+                }
+            }
+        }
+
+        .grids-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .admin-box {
+                max-width: 520px;
+                width: 100%;
+                background: $white;
+                padding: 30px;
+                border-radius: 24px;
+                box-shadow: $shadow;
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    border-left: 4px solid $primary-green;
+                    padding-left: 15px;
+                }
+
+                .form-inline {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-bottom: 25px;
+                    .file-label{
+                        transition: ease 0.5s all;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                        &:active{
+                            transform: scale(1);
+                        }
+                    }
+                    input {
+                        padding: 14px;
+                        border: 1px solid #e0e5f2;
+                        border-radius: 12px;
+                        font-family: "Varela Round", sans-serif;
+                        &:focus {
+                            border-color: $primary-green;
+                            outline: none;
+                        }
+                    }
+
+                    .add-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        font-family: "Varela Round", sans-serif;
+                        background: $primary-green;
+                        border: none;
+                        padding: 14px;
+                        border-radius: 12px;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                }
+
+                .scroll-list {
+                    max-height: none;
+                    overflow-y: visible;
+
+                    .list-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px;
+                        background: #f8fafc;
+                        border-radius: 12px;
+                        margin-bottom: 10px;
+
+                        p {
+                            background: rgba(197, 197, 197, 0.726);
+                            padding: 4px;
+                            color:rgb(101, 101, 101);
+                            border-radius: 5px;
+                        }
+
+                        .del-icon {
+                            color: $danger;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1100px) {
+        .content {
+            margin: 0;
+
+            .grids-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    @media (max-width: 850px) {
+        flex-direction: column;
+
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 20px;
+
+            nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .nav-item {
+                    font-size: 13px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .content {
+            margin: 0;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .admin-dashboard {
+        flex-direction: column;
+
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 20px;
+            top: 0;
+
+            .logo {
+                margin-bottom: 20px;
+            }
+
+            nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+
+                .nav-item {
+                    font-size: 13px;
+                    padding: 12px 15px;
+                    flex: 1;
+                    min-width: 140px;
+                    justify-content: center;
+
+                    &.logout {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .content {
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+
+            header h2 {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .grids-section {
+                gap: 20px;
+                
+                .admin-box {
+                    max-width: 100%;
+                    padding: 20px;
+                    
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .admin-dashboard {
+        .sidebar {
+            nav {
+                .nav-item {
+                    min-width: 100%; 
+                }
+            }
+        }
+        
+        .content {
+            padding: 15px;
+            
+            .stat-card {
+                padding: 15px;
+                flex-direction: column;
+                text-align: center;
+                
+                .stat-icon {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+/* --- Kuchaytirilgan va Tozalangan Media --- */
+
+@media (max-width: 1024px) { // 900px dan balandroq nuqtada sinishni boshlaymiz
+    .admin-dashboard {
+        flex-direction: column; // Sidebarni tepaga chiqaramiz
+
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative; // Sticky'dan voz kechamiz
+            padding: 20px 15px;
+            min-height: auto;
+            border-bottom: 2px solid rgba($primary-green, 0.2);
+
+            .logo {
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+
+            .svg-menu {
+                display: none; // Mobil/Tabletda bu kerak emas
+            }
+
+            nav {
+                flex-direction: row; // Menyularni yonma-yon qilamiz
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .nav-item {
+                    padding: 10px 15px;
+                    font-size: 13px;
+                    flex: 1; 
+                    min-width: 140px; // Itemlar juda kichrayib ketmaydi
+                    justify-content: center;
+                    margin-top: 0 !important; // Logoutni joyiga qaytaramiz
+
+                    &.active {
+                        border-right: none;
+                        border-bottom: 3px solid $primary-green;
+                    }
+                }
+            }
+        }
+
+        .content {
+            padding: 20px;
+            width: 100%;
+            max-width: 100%;
+
+            header h2 {
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .grids-section {
+                grid-template-columns: 1fr;
+                justify-items: center;
+
+                .admin-box {
+                    max-width: 400px;
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .admin-dashboard {
+        .sidebar nav {
+            .nav-item {
+                min-width: 100%;
+            }
+        }
+        
+        .content {
+            .stat-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    }
+}

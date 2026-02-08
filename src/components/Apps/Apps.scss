@@ -1,0 +1,212 @@
+$green-main: #90EE90; 
+.feruz-app-banner {
+    background-color: $green-main;
+    border-radius: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 60px 80px;
+    position: relative;
+    width: 95%;
+    .banner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        min-height: 350px;
+        gap: 40px;
+    }
+
+    .content-side {
+        color: white;
+        z-index: 2;
+        flex: 1;
+        min-width: 0;
+
+        .main-title {
+            font-size: clamp(28px, 5vw, 56px);
+            display: block;
+            font-weight: 800;
+            max-width: 100%; 
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .sub-description {
+            font-size: 22px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 340px;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+
+            .store-btn {
+                img {
+                    height: 45px;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 8px;
+                    transition: transform 0.2s;
+                }
+
+                &:hover img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .phones-side {
+        display: flex;
+        gap: 30px;
+        position: relative;
+        transform: translateY(40px);
+
+        .phone {
+            width: 220px;
+            height: 450px;
+            background: #000;
+            border-radius: 35px;
+            border: 8px solid #1a1a1a;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+
+            &.light-mode {
+                background: white;
+
+                .phone-screen {
+                    background: #fdfdfd;
+                    color: #333;
+                }
+
+                .screen-header {
+                    background: #90EE90;
+                    color: white;
+                    img{
+                        max-width: 40px;
+                    }
+                }
+            }
+
+            &.dark-mode {
+                background: #0d1117;
+                .phone-screen {
+                    background: #0d1117;
+                    color: white;
+                }
+
+                .screen-header {
+                    background: #161b22;
+                    color: white;
+                    .link-bar{
+                        max-width: 300px;
+                        height: 20px;
+                        width: 100%;
+                        .link{
+                            text-align: center;
+                            margin-top: -15px;
+                            margin-bottom: 5px;
+                            max-width: 300px;
+                            background-color: gray;
+                            border-radius:100px;
+                            width: 100%;
+                            position: relative;
+                            height: 20px;
+                            img{
+                                position: absolute;
+                                max-width: 15px;
+                                top: 2px;
+                                right: 5px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    img{
+                        max-width: 40px;
+                        width: 100%;
+                    }
+                }
+
+                transform: translateY(-20px); 
+            }
+
+            .phone-screen {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .screen-header {
+                    padding: 30px 15px 15px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 14px;
+
+                    .avatar {
+                        border-radius: 50%;
+                    }
+                }
+
+                .course-card {
+                    padding: 15px;
+
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                        opacity: 0.7;
+                    }
+
+                    .lang-box {
+                        border: 1px solid #eee;
+                        padding: 10px;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        cursor: pointer;
+                        transition: ease 0.5s all;
+                        &:hover{
+                            transform: scale(1.07);
+                        }
+                        strong {
+                            display: block;
+                            font-size: 14px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .feruz-app-banner {
+        padding: 40px;
+
+        .banner-container {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+
+        .content-side .download-buttons {
+            justify-content: center;
+        }
+
+        .phones-side {
+            margin-top: 50px;
+            transform: scale(0.8);
+        }
+    }
+}
