@@ -1,16 +1,9 @@
 import { v4 as uuidv4 } from "uuid"
-export const courses = [
-  { id: uuidv4(), title: 'Frontend Development', description: 'HTML, CSS, JS', price: '$100' },
-  { id: uuidv4(), title: 'Backend Development', description: 'Node.js, Express', price: '$120' },
-  { id: uuidv4(), title: 'React JS', description: 'React Hooks, Router', price: '$150' },
-  { id: uuidv4(), title: 'Python Programming', description: 'Python Basics', price: '$90' }
-]
 export const reviews = [
-  { id: uuidv4(), title: 'Eco Schools', name: 'UNESCO', role: "O'qituvchi", img: '/img/yapon-tili.png' },
-  { id: uuidv4(), title: 'National Geographic Kids', name: 'Kids kontent', role: "O'qituvchi", img: '/img/ind.png' },
-  { id: uuidv4(), title: "YouTube Kids", name: 'Eko kontent', role: "O'qituvchi", img: '/img/uz.png' },
-  { id: uuidv4(), title: 'WWF Education', name: 'Kids', role: "O'qituvchi", img: '/img/ielts.png' },
-  { id: uuidv4(), title: 'Yam-yashil', name: 'Eko loyiha', role: "O'qituvchi", img: '/img/ielts.png' },
+  { id: uuidv4(), title: 'Eco Schools', name: 'UNESCO', img: '/icons/eco-schools.png' },
+  { id: uuidv4(), title: 'National Geographic Kids', name: 'Kids kontent', img: '/icons/youtube.webp' },
+  { id: uuidv4(), title: "YouTube Kids", name: 'Eko kontent', img: '/icons/national.png' },
+  { id: uuidv4(), title: 'WWF Education', name: 'Kids', img: '/icons/panda.png' },
 ]
 export const lessons = [
   { id: uuidv4(), name: 'Rus tili', time: '00:00 - 02:00', color: '#eef6ff' },

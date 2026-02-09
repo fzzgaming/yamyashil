@@ -134,7 +134,7 @@ const Admin = () => {
                 </div>
                 <div className="grids-section" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', alignItems: 'flex-start' }}>
                     <section className="admin-box" style={{ maxWidth: '400px', width: '100%' }}>
-                        <h3>O'qituvchi Qo'shish</h3>
+                        <h3>Raqobatchilar</h3>
                         <form onSubmit={addTeacher} className="form-inline">
                             <input type="text" placeholder="Kompaniya nomi" value={newTeacher.title} onChange={(e) => setNewTeacher({ ...newTeacher, title: e.target.value })} />
                             <input type="text" placeholder="Ism yoki mavzu" value={newTeacher.name} onChange={(e) => setNewTeacher({ ...newTeacher, name: e.target.value })} />
@@ -152,6 +152,7 @@ const Admin = () => {
                                 <div key={item.id} className="list-item">
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flex: 1 }}>
                                         <img src={item.img} alt="user" style={{ width: '30px', height: '30px', borderRadius: '50%', objectFit: 'cover' }} />
+                                        <span style={{ fontSize: '13px', wordBreak: 'break-all' }}>{item.title} -</span>
                                         <span style={{ fontSize: '13px', wordBreak: 'break-all' }}>{item.name}</span>
                                     </div>
                                     <HiOutlineTrash className="del-icon" onClick={() => setReviews(reviews.filter(r => r.id !== item.id))} />
